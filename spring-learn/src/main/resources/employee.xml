@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="bhuvi" class="com.cts.Employee">
+		<property name="id" value="1"/>
+		<property name="name" value="Bhuvana"/>
+		<property name="salary" value="30000"/>
+		<property name="permanent" value="true"/>
+	</bean>
+	<bean id="push" class="com.cts.Employee">
+		<property name="id" value="2"/>
+		<property name="name" value="pushkala"/>
+		<property name="salary" value="40000"/>
+		<property name="permanent" value="true"/>
+	</bean>
+	<bean id="karthick" class="com.cts.Employee">
+		<property name="id" value="3"/>
+		<property name="name" value="karthick"/>
+		<property name="salary" value="27500"/>
+		<property name="permanent" value="true"/>
+	</bean>
+	<bean id="nagu" class="com.cts.Employee">
+		<property name="id" value="4"/>
+		<property name="name" value="nagu"/>
+		<property name="salary" value="45000"/>
+		<property name="permanent" value="true"/>
+	</bean>
+	<bean id="ashwin" class="com.cts.Employee">
+		<property name="id" value="5"/>
+		<property name="name" value="ashwin"/>
+		<property name="salary" value="20000"/>
+		<property name="permanent" value="true"/>
+	</bean>
+	<bean id="bhava" class="com.cts.Employee">
+		<property name="id" value="6"/>
+		<property name="name" value="bhavani"/>
+		<property name="salary" value="25000"/>
+		<property name="permanent" value="true"/>
+	</bean>
+	<bean id="chandru" class="com.cts.Employee">
+		<property name="id" value="7"/>
+		<property name="name" value="chandru"/>
+		<property name="salary" value="200000"/>
+		<property name="permanent" value="true"/>
+	</bean>
+	
+	<bean id="employeeList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<ref bean="bhuvi"/>
+				<ref bean="push"/>
+				<ref bean="karthick"/>
+				<ref bean="nagu"/>
+				<ref bean="ashwin"/>
+				<ref bean="bhava"/>
+				<ref bean="chandru"/>
+			</list>
+		</constructor-arg>
+	</bean>
+</beans>
